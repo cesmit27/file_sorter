@@ -1,7 +1,7 @@
 import os
 
 with open('temp.txt', 'r') as f:
-	lines =[line.strip() for line in f]
+	lines =[line.strip() for line in f if line.strip()]
 
 lines.sort(reverse=True)
 
